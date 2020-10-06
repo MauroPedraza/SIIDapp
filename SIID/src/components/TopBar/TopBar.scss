@@ -9,10 +9,49 @@
   padding: 0 20px;
   position: relative;
   z-index: 1;
-
+  .menu-top {
+    width: inherit;
+    justify-content: space-between;
+  }
+  .options {
+    display: flex;
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+  }
   &__left {
     i {
       font-size: 20px !important;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__middle {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+    a {
+      display: flex;
+      align-items: center;
+      // margin-right: 20px;
+      color: $font-light;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        border-radius: 50px;
+      }
+    }
+    i {
       &:hover {
         cursor: pointer;
       }

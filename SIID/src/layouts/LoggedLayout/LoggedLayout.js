@@ -14,10 +14,10 @@ export default function LoggedLayout(props) {
     <Router>
       <Grid className="logged-layout">
         <Grid.Row>
-          <Grid.Column width={3}>
+          {/* <Grid.Column width={3}>
             <MenuLeft user={user} />
-          </Grid.Column>
-          <Grid.Column className="content" width={13}>
+          </Grid.Column> */}
+          <Grid.Column className="content" width={16}>
             <TopBar user={user} />
             <Routes user={user} setReloadApp={setReloadApp} />
           </Grid.Column>
